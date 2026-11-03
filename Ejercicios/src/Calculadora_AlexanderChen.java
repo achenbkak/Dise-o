@@ -3,11 +3,12 @@ import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
-
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+
+//holaquetasl
 
 
 public class Calculadora_AlexanderChen {
@@ -29,21 +30,17 @@ public class Calculadora_AlexanderChen {
         gbc1.gridy = 0;
         gbc1.weighty = 1.0;
 
-        // Teclado numérico: 66 %
         gbc1.gridx = 0;
         gbc1.weightx = 0.1;
         gbc1.insets = new Insets(0, 10, 10, 10);
         panel.add(comboBox, gbc1);
 
-        // Operadores: 33 %
         gbc1.gridx = 1;
         gbc1.weightx = 0.9;
         gbc1.insets = new Insets(0, 0, 10, 5);
         panel.add(pantalla, gbc1);
         a.add(panel, BorderLayout.NORTH);
       
-        
-        
         tecladoNum tecladoNum = new tecladoNum(pantalla);
 
         operadores operadores = new operadores(pantalla);
@@ -56,13 +53,11 @@ public class Calculadora_AlexanderChen {
         gbc.gridy = 0;
         gbc.weighty = 1.0;
 
-        // Teclado numérico: 66 %
         gbc.gridx = 0;
         gbc.weightx = 2.0;
         gbc.insets = new Insets(0, 0, 0, 10);
         centro.add(tecladoNum, gbc);
 
-        // Operadores: 33 %
         gbc.gridx = 1;
         gbc.weightx = 1.0;
         gbc.insets = new Insets(0, 0, 0, 0);
