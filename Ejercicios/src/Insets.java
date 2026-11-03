@@ -1,0 +1,6 @@
+/**
+ * Insets
+ */
+public class Insets {
+
+}
